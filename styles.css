@@ -40,6 +40,14 @@ body {
     color: #61dafb;
 }
 
+/* Container Class for Centering and Proper Alignment */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;  /* Center-align content within sections */
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(to right, #282c34, #61dafb);
@@ -48,7 +56,8 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    text-align: center;
+    text-align: center;  /* Ensure text is centered in hero section */
+    padding: 0 2rem;     /* Padding for responsiveness */
 }
 
 .hero h1 {
@@ -59,6 +68,7 @@ body {
 .hero p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    text-align: justify;  /* Justify text for better readability */
 }
 
 .hero-btn {
@@ -75,24 +85,39 @@ body {
 }
 
 /* About Section */
-.about, .features, .download {
+.about {
+    background-color: #f4f4f4; /* Light background for contrast */
     padding: 3rem 2rem;
     text-align: center;
 }
 
-.about h2, .features h2, .download h2 {
+.about h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
 }
 
 .about p {
     font-size: 1.2rem;
+    text-align: justify;  /* Justify text for better readability */
 }
 
 /* Features Section */
+.features {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
 .features ul {
     list-style-type: none;
     padding: 0;
+    text-align: left;  /* Align the list to the left within the container */
+    display: inline-block;  /* Keep the list in a narrower block */
 }
 
 .features ul li {
@@ -101,6 +126,17 @@ body {
 }
 
 /* Download Section */
+.download {
+    padding: 3rem 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.download h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
 .download-btn {
     background-color: #61dafb;
     color: white;
@@ -120,4 +156,13 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 0;
+}
+
+footer a {
+    color: #61dafb;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #21a1f1;
 }
