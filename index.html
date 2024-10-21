@@ -3,74 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>DXVK - Direct3D to Vulkan</title>
+    <title>DXVK Official Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="logo.png" alt="DXVK Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#download">Download</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <h1>DXVK Official Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#what-is-dxvk">What is DXVK?</a></li>
+                <li><a href="#download">How to Download</a></li>
+                <li><a href="#installation">Installation Guide</a></li>
+                <li><a href="#fix-errors">How to Fix Errors</a></li>
+                <li><a href="#features">Features of DXVK</a></li>
+                <li><a href="#faqs">FAQs</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>DXVK - Direct3D to Vulkan</h1>
-            <p>Unlock high-performance Direct3D gaming on Linux with DXVK, the leading translation layer for Direct3D 9, 10, and 11 games.</p>
-            <a href="#download" class="hero-btn">Download DXVK</a>
-        </div>
+    
+    <section id="hero">
+        <h2>Enhance Your Gaming Experience with DXVK</h2>
+        <p>Transform your DirectX games into high-performance Vulkan applications. Experience improved graphics, better frame rates, and enhanced compatibility.</p>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>About DXVK</h2>
-        <p>DXVK is a translation layer that converts Direct3D calls into Vulkan, enabling Windows games and applications to run efficiently on Linux.</p>
+    <section id="what-is-dxvk">
+        <h2>What is DXVK?</h2>
+        <p>DXVK is a Vulkan-based translation layer for Direct3D 9, 10, and 11. It is designed to allow Windows games using DirectX to run on Linux through Wine or Proton, providing better performance and graphics quality. By translating DirectX calls into Vulkan commands, DXVK helps utilize modern GPUs more efficiently, leading to a smoother gaming experience.</p>
+        <p>Originally developed for the gaming community, DXVK has become a popular solution for gamers looking to run their favorite Windows titles on Linux. It is actively maintained and updated by a community of developers, ensuring continuous improvements and support for new features.</p>
+    </section>
 
-        <!-- Added section with detailed download instructions -->
-        <h3>Download DXVK - Boost Your Gaming Performance</h3>
-        <p>Get started with DXVK today and enjoy faster, smoother gameplay by converting Direct3D to Vulkan. Whether you're running games on Linux or optimizing your system, DXVK offers a powerful solution. Follow the steps below to download and install DXVK easily:</p>
+    <section id="download">
+        <h2>How to Download</h2>
+        <p>You can download the latest version of DXVK from the official GitHub repository. Here are the steps to find the download:</p>
+        <ol>
+            <li>Visit the <a href="https://github.com/doitsujin/dxvk/releases" target="_blank">DXVK Releases Page</a>.</li>
+            <li>Select the latest release version.</li>
+            <li>Download the appropriate archive file (e.g., .tar.gz for Linux, .zip for Windows).</li>
+        </ol>
+        <p>Ensure you check the release notes for any important updates or changes that might affect your setup.</p>
+        <a class="cta-button" href="https://github.com/doitsujin/dxvk/releases" target="_blank">Download DXVK Now!</a>
+    </section>
+
+    <section id="installation">
+        <h2>Installation Guide</h2>
+        <p>Follow these steps to install DXVK:</p>
+        <ol>
+            <li><strong>Extract the Archive:</strong> After downloading, extract the contents of the archive to a location on your computer.</li>
+            <li><strong>Copy DLL Files:</strong> Navigate to the `x32` or `x64` folders in the extracted files, depending on whether your game is 32-bit or 64-bit. Copy the appropriate DLL files (e.g., `d3d11.dll`, `d3d9.dll`, and `dxgi.dll`) into the game's installation directory, where the game's executable file is located.</li>
+            <li><strong>Launch the Game:</strong> Start your game as you normally would. DXVK should automatically detect and use the DLLs you placed in the game directory.</li>
+        </ol>
+        <p>If you’re using a gaming platform like Steam, you can also set it up through Proton settings or compatibility options.</p>
+    </section>
+
+    <section id="fix-errors">
+        <h2>How to Fix Errors</h2>
+        <p>If you encounter any issues while using DXVK, try the following troubleshooting steps:</p>
         <ul>
-            <li><strong>Visit the DXVK GitHub Repository:</strong> Head over to the official <a href="https://github.com/doitsujin/dxvk/releases" target="_blank">DXVK GitHub page</a> for the latest release.</li>
-            <li><strong>Download the Latest Release:</strong> Look for the latest stable version and click the download link to get the DXVK package.</li>
-            <li><strong>Extract the Files:</strong> Unzip the downloaded file to a convenient location on your system.</li>
-            <li><strong>Integrate with Your Game:</strong> Follow the provided instructions to set up DXVK with your games or applications for seamless Direct3D to Vulkan translation.</li>
+            <li><strong>Update Graphics Drivers:</strong> Ensure that your GPU drivers are up to date. Visit the manufacturer’s website (NVIDIA, AMD, Intel) to download the latest drivers.</li>
+            <li><strong>Check Game Compatibility:</strong> Not all games are fully compatible with DXVK. Consult the <a href="https://www.protondb.com/" target="_blank">ProtonDB</a> website for user reports on game compatibility.</li>
+            <li><strong>Adjust DXVK Settings:</strong> You can adjust DXVK settings by creating a configuration file. This can help resolve specific issues with certain games.</li>
+            <li><strong>Consult the Community:</strong> For persistent issues, check forums or the DXVK GitHub page for similar problems and solutions shared by other users.</li>
         </ul>
-        <p>Enjoy better performance and compatibility on modern systems with DXVK. <a href="https://github.com/doitsujin/dxvk/releases" class="download-btn">Download now</a> and unlock the power of Vulkan for your gaming experience.</p>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <h2>Features</h2>
+    <section id="features">
+        <h2>Features of DXVK</h2>
         <ul>
-            <li>Supports Direct3D 9, 10, and 11</li>
-            <li>Utilizes the Vulkan API for optimal performance</li>
-            <li>Seamless gaming experience on Linux</li>
-            <li>Works with Wine and Proton</li>
-            <li>Active community and regular updates</li>
+            <li><strong>High Performance:</strong> Provides a significant performance boost for Direct3D games running on Vulkan.</li>
+            <li><strong>Wide Compatibility:</strong> Supports a large number of Direct3D games, including many popular titles.</li>
+            <li><strong>Active Development:</strong> Regular updates from an active community of developers ensure ongoing improvements and support for new features.</li>
+            <li><strong>Enhanced Graphics:</strong> Utilizes Vulkan’s advanced graphics capabilities, resulting in better visual quality and stability.</li>
+            <li><strong>Easy Integration:</strong> Simple installation process allows easy integration with existing game setups.</li>
         </ul>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="download">
-        <h2>Download DXVK</h2>
-        <a href="https://github.com/doitsujin/dxvk/releases" class="download-btn">Get the Latest Version</a>
+    <section id="faqs">
+        <h2>FAQs</h2>
+        <h3>Q: Is DXVK compatible with all games?</h3>
+        <p>A: DXVK works with many DirectX games, but compatibility may vary. Check the ProtonDB for user experiences with specific titles.</p>
+        
+        <h3>Q: How can I report a bug?</h3>
+        <p>A: You can report bugs on the DXVK GitHub issues page. Be sure to provide detailed information about your setup and the issue encountered.</p>
+        
+        <h3>Q: Does DXVK require specific system requirements?</h3>
+        <p>A: DXVK runs on systems with Vulkan-compatible drivers. Ensure your graphics card supports Vulkan and that you have the latest drivers installed.</p>
+        
+        <h3>Q: Can I use DXVK with Wine or Proton?</h3>
+        <p>A: Yes! DXVK is primarily used with Wine and Proton to enhance the performance of Windows games on Linux systems.</p>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 DXVK. All rights reserved. | <a href="#contact">Contact Us</a></p>
+        <p>&copy; 2024 DXVK Project. All rights reserved.</p>
     </footer>
 </body>
 </html>
