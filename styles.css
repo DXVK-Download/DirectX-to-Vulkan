@@ -101,6 +101,20 @@ body {
     text-align: justify;  /* Justify text for better readability */
 }
 
+/* Centralized List Styling */
+.about ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0;            /* Remove padding */
+    margin: 0 auto;        /* Center the list */
+    display: inline-block;  /* Align the list in the center */
+    text-align: left;      /* Keep the text aligned to the left within the centered block */
+}
+
+.about li {
+    margin: 0.5rem 0;      /* Add some space between list items */
+    font-size: 1.2rem;     /* Adjust font size for readability */
+}
+
 /* Features Section */
 .features {
     padding: 3rem 2rem;
