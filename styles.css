@@ -1,90 +1,66 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    line-height: 1.8; /* Increased line height for better readability */
+    margin: 0;
+    padding: 0;
 }
 
-header {
-    background-color: #007acc; /* Official blue color */
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-#hero {
-    background: #005ea6; /* Darker blue */
-    color: white;
-    padding: 2rem;
-    text-align: center;
-}
-
+/* Section Content */
 section {
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 800px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    padding: 0 20px;
+    max-width: 900px; /* Ensures content is centered and not too wide */
 }
 
-h2 {
-    color: #007acc;
+/* Paragraph Styling */
+p {
+    margin-bottom: 20px; /* Adds space between paragraphs */
 }
 
+/* Heading Styles */
+h2, h3, h4 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Lists Styling */
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px; /* Adds space between list items */
+}
+
+/* Download Button (Call to Action) */
 .cta-button {
     display: inline-block;
-    background-color: #007acc;
+    background-color: #4CAF50; /* Button color */
     color: white;
     padding: 10px 20px;
+    text-align: center;
     text-decoration: none;
+    font-size: 16px;
     border-radius: 5px;
-    margin-top: 20px;
-    font-weight: bold;
+    margin-top: 20px; /* Add space above the button */
+    margin-bottom: 40px; /* Add space below the button */
 }
 
 .cta-button:hover {
-    background-color: #005ea6; /* Darker blue on hover */
+    background-color: #45a049; /* Darker green on hover */
 }
 
-footer {
-    text-align: center;
-    padding: 2rem 0;
-    background: #007acc;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
+/* Footer Menu */
 .footer-menu {
-    margin-bottom: 1rem;
+    margin: 20px 0;
 }
 
 .footer-menu a {
-    color: white;
+    margin-right: 15px;
     text-decoration: none;
-    margin: 0 15px;
+    color: #333;
 }
 
 .footer-menu a:hover {
