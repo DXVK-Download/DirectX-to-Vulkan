@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DXVK Installation Guide</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS -->
+</head>
+<body>
+    <header>
+        <h1>DXVK Official Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="hero">
+        <h2>DXVK Installation Guide</h2>
+        <p>Follow this guide to install DXVK on your system for improved gaming performance on Linux.</p>
+    </div>
+
+    <section>
+        <h2>What You Need</h2>
+        <p>Before installing DXVK, ensure you have the following prerequisites:</p>
+        <ul>
+            <li>A compatible Linux distribution (Ubuntu, Fedora, Arch, etc.).</li>
+            <li>Wine installed on your system.</li>
+            <li>Vulkan drivers installed and configured.</li>
+            <li>A Direct3D application or game you wish to run with DXVK.</li>
+        </ul>
+
+        <h2>Step 1: Download DXVK</h2>
+        <p>To get the latest version of DXVK, visit the official website: <a href="https://dxvk-download.github.io">dxvk-download.github.io</a>. Click on the "Downloads" section and download the latest stable release as a ZIP file.</p>
+
+        <h2>Step 2: Extract the Downloaded Files</h2>
+        <p>After downloading the ZIP file, navigate to your downloads directory. Right-click the file and select "Extract Here" or use a terminal command:</p>
+        <pre><code>tar -xvf dxvk-x.y.z.tar.gz</code></pre>
+        <p>This will create a new folder containing the DXVK files.</p>
+
+        <h2>Step 3: Open the Terminal</h2>
+        <p>You'll need to use the terminal to install DXVK. Open your terminal application, which is typically found in the utilities menu of your Linux distribution.</p>
+
+        <h2>Step 4: Navigate to the Extracted Folder</h2>
+        <p>Use the <code>cd</code> command to change to the directory where you extracted the DXVK files. For example:</p>
+        <pre><code>cd ~/Downloads/dxvk-x.y.z</code></pre>
+
+        <h2>Step 5: Install DXVK</h2>
+        <p>To install DXVK, you can use the provided installation script. You will need to specify your Wine prefix:</p>
+        <pre><code>WINEPREFIX="/path/to/your/wineprefix" ./setup_dxvk.sh install</code></pre>
+        <p>Replace <code>/path/to/your/wineprefix</code> with the path to your specific Wine prefix. If you are unsure where your Wine prefix is, the default is usually <code>~/.wine</code>.</p>
+
+        <h2>Step 6: Verifying the Installation</h2>
+        <p>Once the installation script has finished running, you can verify that DXVK is properly installed by running a Direct3D application:</p>
+        <ol>
+            <li>Launch your game or application through Wine.</li>
+            <li>If DXVK is working, you should see improved performance and compatibility.</li>
+            <li>Check the terminal for any error messages that may indicate problems.</li>
+        </ol>
+
+        <h2>Step 7: Configuring DXVK (Optional)</h2>
+        <p>Some games may require specific configurations to work optimally with DXVK. You can modify settings by editing the configuration files or using tools like <a href="https://github.com/ValveSoftware/Proton#protondb">ProtonDB</a> to find community-sourced tweaks.</p>
+
+        <h2>Updating DXVK</h2>
+        <p>To update DXVK, repeat the download and installation steps for the latest version. The installation script will overwrite the existing files automatically.</p>
+
+        <h2>Common Issues and Troubleshooting</h2>
+        <p>If you encounter issues while installing or using DXVK, consider the following:</p>
+        <ul>
+            <li>Ensure you have the latest Vulkan drivers installed.</li>
+            <li>Check for Wine updates to ensure compatibility.</li>
+            <li>Consult the <a href="https://github.com/doitsujin/dxvk/issues">DXVK GitHub issues page</a> for known problems and solutions.</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>Installing DXVK can greatly enhance your gaming experience on Linux by providing better performance and compatibility for Direct3D applications. By following the steps outlined in this guide, you can easily install and configure DXVK for your favorite games. For the latest updates and releases, always refer to the official DXVK website at <a href="https://dxvk-download.github.io">dxvk-download.github.io</a>.</p>
+
+        <a href="https://dxvk-download.github.io" class="cta-button">Download DXVK Now</a>
+    </section>
+
+    <footer>
+        <div class="footer-menu">
+            <a href="blogs.html">Blogs</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="about-us.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="disclaimer.html">Disclaimer</a>
+        </div>
+        <p>&copy; 2024 DXVK Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
