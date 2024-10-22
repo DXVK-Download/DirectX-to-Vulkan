@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Download DXVK</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS -->
+</head>
+<body>
+    <header>
+        <h1>DXVK Official Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="hero">
+        <h2>How to Download DXVK</h2>
+        <p>Follow the steps below to download and install DXVK for improved gaming performance on Linux.</p>
+    </div>
+
+    <section>
+        <h2>Step 1: Visit the Official DXVK Website</h2>
+        <p>To download the latest version of DXVK, go to the official website: <a href="https://dxvk-download.github.io">dxvk-download.github.io</a>. Here, you will find the most recent releases, along with detailed information about the project and its features.</p>
+
+        <h2>Step 2: Navigate to the Downloads Section</h2>
+        <p>Once on the homepage, look for the "Downloads" section. This section lists all the available versions of DXVK, including stable releases and development builds. It is recommended to download the stable version unless you need specific features or fixes available in the development build.</p>
+
+        <h2>Step 3: Choose the Right Version for Your Needs</h2>
+        <p>DXVK offers different versions based on the Direct3D version you wish to use (9, 10, or 11). You should select the version that corresponds to the Direct3D API used by the game or application you want to run.</p>
+        <ul>
+            <li><strong>DXVK 1.0</strong> (for Direct3D 9)</li>
+            <li><strong>DXVK 1.1</strong> (for Direct3D 10)</li>
+            <li><strong>DXVK 1.2</strong> (for Direct3D 11)</li>
+        </ul>
+        <p>Make sure to check the changelog for each version to see what's new or if any issues have been fixed.</p>
+
+        <h2>Step 4: Download the Latest Release</h2>
+        <p>Click on the link for the latest stable release. This will take you to the GitHub releases page, where you can download a ZIP file containing the DXVK files. The file will be named something like <code>dxvk-x.y.z.tar.gz</code>, where <code>x.y.z</code> corresponds to the version number.</p>
+
+        <h2>Step 5: Extract the Downloaded Files</h2>
+        <p>After the download is complete, locate the ZIP file in your downloads directory. Right-click on the file and select "Extract Here" or use your preferred extraction tool. This will create a new folder containing the necessary files to install DXVK.</p>
+
+        <h2>Step 6: Installing DXVK</h2>
+        <p>The installation process may vary slightly depending on your setup (e.g., if you're using Wine or Proton). Below are the general steps for installation:</p>
+        <ol>
+            <li><strong>Open a Terminal:</strong> You will need to use the terminal to copy the DXVK files to the appropriate Wine prefix.</li>
+            <li><strong>Navigate to the Extracted Folder:</strong> Use the <code>cd</code> command to change to the directory where you extracted the DXVK files. For example:
+                <pre><code>cd ~/Downloads/dxvk-x.y.z</code></pre>
+            </li>
+            <li><strong>Install DXVK:</strong>
+                <p>If you're using Wine, run the following command to install DXVK into your Wine prefix:</p>
+                <pre><code>WINEPREFIX="/path/to/your/wineprefix" ./setup_dxvk.sh install</code></pre>
+                <p>Replace <code>/path/to/your/wineprefix</code> with the path to your specific Wine prefix.</p>
+            </li>
+            <li><strong>Verify Installation:</strong> After the installation completes, you can check if DXVK is working correctly by running a Direct3D application. If everything is set up properly, you should see improved performance and compatibility.</li>
+        </ol>
+
+        <h2>Step 7: Updating DXVK</h2>
+        <p>To keep DXVK up-to-date, periodically check the official website or GitHub releases page for new versions. When a new version is available, follow the same download and installation steps to update DXVK in your Wine prefix.</p>
+
+        <h2>FAQs</h2>
+        <h3>Q1: Is DXVK only for Linux?</h3>
+        <p>A1: Yes, DXVK is primarily designed for running Windows games on Linux via Wine. However, it can also be used in Windows environments through specific configurations.</p>
+
+        <h3>Q2: Do I need to uninstall the previous version of DXVK before updating?</h3>
+        <p>A2: No, the installation script will automatically overwrite the previous version. However, it's always a good idea to back up your settings before upgrading.</p>
+
+        <h3>Q3: What if my game doesn't run correctly with DXVK?</h3>
+        <p>A3: Some games may require specific configurations or settings. Refer to the DXVK documentation and community forums for troubleshooting tips and compatibility reports.</p>
+
+        <h2>Conclusion</h2>
+        <p>Downloading and installing DXVK is a straightforward process that can significantly enhance your gaming experience on Linux systems. By following the steps outlined above, you'll be well on your way to enjoying improved performance and compatibility for your favorite Windows games. For the latest version, always visit the official DXVK website at <a href="https://dxvk-download.github.io">dxvk-download.github.io</a>.</p>
+
+        <a href="https://dxvk-download.github.io" class="cta-button">Download DXVK Now</a>
+    </section>
+
+    <footer>
+        <div class="footer-menu">
+            <a href="blogs.html">Blogs</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="about-us.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="disclaimer.html">Disclaimer</a>
+        </div>
+        <p>&copy; 2024 DXVK Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
