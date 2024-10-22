@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is DXVK? - DXVK Official Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DXVK Official Website</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="disclaimer.html">Disclaimer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="what-is-dxvk">
+        <h2>What is DXVK? A Beginner's Guide to the DXVK Project</h2>
+        <p><strong>DXVK</strong> is an open-source project that acts as a translation layer between Microsoft's <strong>Direct3D</strong> (versions 9, 10, and 11) and the <strong>Vulkan</strong> graphics API. This powerful tool enables Windows-based games to run on Linux operating systems by converting Direct3D instructions into Vulkan commands. By doing so, DXVK makes it possible for Linux users to enjoy Windows games with improved performance and compatibility.</p>
+
+        <h3>Why is DXVK Important?</h3>
+        <p>Without DXVK, playing DirectX games on Linux could lead to poor performance, low frame rates, and compatibility issues. DXVK offers several benefits:</p>
+        <ul>
+            <li><strong>Better Performance</strong>: Direct3D games run faster on Linux by using Vulkan.</li>
+            <li><strong>Improved Compatibility</strong>: DXVK makes many Windows games playable on Linux through tools like Proton and Wine.</li>
+            <li><strong>Enhanced Graphics</strong>: Vulkan fully utilizes modern GPUs for smoother gameplay and better visuals.</li>
+        </ul>
+
+        <h3>How Does DXVK Work?</h3>
+        <p>DXVK intercepts Direct3D calls that a game makes to the Windows system and converts them into Vulkan instructions. Vulkan is a low-overhead, high-performance API that efficiently handles these graphical tasks. This enables Windows-exclusive games to run on Linux without needing to rewrite the game's code.</p>
+
+        <h3>Key Features of DXVK</h3>
+        <ul>
+            <li>Support for Direct3D 9, 10, and 11, covering a wide range of Windows games.</li>
+            <li>Seamless integration with Wine and Proton for a smooth gaming experience on Linux.</li>
+            <li>Performance optimization through Vulkan, providing better frame rates and lower latency.</li>
+            <li>Support for a large variety of popular Windows games on Linux.</li>
+        </ul>
+
+        <h3>How to Install DXVK</h3>
+        <h4>For Steam Proton:</h4>
+        <ol>
+            <li>Open Steam and go to your Library.</li>
+            <li>Find the game you want to play, right-click, and select Properties.</li>
+            <li>In the Compatibility tab, check the box to "Force the use of a specific Steam Play compatibility tool."</li>
+            <li>Select Proton from the dropdown. DXVK is automatically included with Proton, so no additional installation is needed.</li>
+        </ol>
+
+        <h4>For Wine Users:</h4>
+        <ol>
+            <li>Download the latest version of DXVK from the <a href="https://github.com/doitsujin/dxvk" target="_blank">DXVK GitHub page</a>.</li>
+            <li>Unzip the file and locate the <code>dxvk-setup</code> script.</li>
+            <li>Follow the instructions to integrate DXVK with Wine.</li>
+        </ol>
+
+        <h3>How to Fix Common DXVK Issues</h3>
+        <ul>
+            <li><strong>Game Crashes or Freezes</strong>: Ensure you're using the latest versions of DXVK, Proton, or Wine. Update your Vulkan drivers or GPU drivers.</li>
+            <li><strong>Performance Issues</strong>: Try lowering in-game graphics settings or updating your graphics card drivers.</li>
+            <li><strong>Graphical Glitches</strong>: Check the <a href="https://github.com/doitsujin/dxvk/issues" target="_blank">DXVK GitHub Issues page</a> for possible fixes.</li>
+        </ul>
+
+        <h3>Frequently Asked Questions (FAQs)</h3>
+        <ul>
+            <li><strong>Q: Does DXVK support DirectX 12?</strong><br>A: No, DXVK only supports Direct3D 9, 10, and 11. DirectX 12 requires a different translation layer, such as <strong>VKD3D</strong>.</li>
+            <li><strong>Q: Can I use DXVK on non-gaming applications?</strong><br>A: While DXVK is primarily used for gaming, it can technically be used for any Direct3D application that benefits from Vulkan rendering.</li>
+            <li><strong>Q: Does DXVK work on macOS?</strong><br>A: No, DXVK is designed for Linux systems. macOS users should explore alternatives like <strong>MoltenVK</strong>, which translates Vulkan to Metal.</li>
+        </ul>
+
+        <h3>Conclusion</h3>
+        <p>DXVK has revolutionized Linux gaming by making it easier to play Windows games with excellent performance and compatibility. Whether you're a dedicated Linux gamer or just getting started, DXVK is a must-have tool for enhancing your gaming experience.</p>
+
+        <h3>Call to Action</h3>
+        <p>Ready to improve your Linux gaming? <a href="https://github.com/doitsujin/dxvk" class="cta-button" target="_blank">Download DXVK now</a> and experience smoother, faster gameplay on Linux today!</p>
+    </section>
+
+    <footer>
+        <div class="footer-menu">
+            <a href="blogs.html">Blogs</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="about-us.html">About Us</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="disclaimer.html">Disclaimer</a>
+        </div>
+        <p>&copy; 2024 DXVK Project. All rights reserved.</p>
+    </footer>
+</body>
+</html>
